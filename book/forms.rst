@@ -96,7 +96,7 @@ from inside a controller::
                 ->add('save', 'submit', array('label' => 'Create Task'))
                 ->getForm();
 
-            return $this->render('default/new.html.twig', array(
+            return $this->render('AppBundle:Default:new.html.twig', array(
                 'form' => $form->createView(),
             ));
         }
